@@ -1,4 +1,4 @@
- // Copyright (c) 2009-2010 Satoshi Nakamoto
+// Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -1071,14 +1071,12 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-	int64 nSubsidy = 5000000000;
-	printf ("hight : ", nHeight);
-	printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
-	if (nHeight==0 || nHeight==1){
-		 nSubsidy = (150000000000);	
+    int64 nSubsidy = 5000000000;
+
+        if (nHeight==0 || nHeight==1){
+		 nSubsidy = (550000000000);
 	}
-    
-	// Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
+    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 12500000); // Zuo: 840k blocks in ~4 years
 
     return nSubsidy + nFees;

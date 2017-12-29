@@ -1,0 +1,22 @@
+obj/leveldb.o: leveldb.cpp leveldb.h serialize.h allocators.h version.h \
+ clientversion.h /root/zuo/src/leveldb/include/leveldb/db.h \
+ /root/zuo/src/leveldb/include/leveldb/iterator.h \
+ /root/zuo/src/leveldb/include/leveldb/slice.h \
+ /root/zuo/src/leveldb/include/leveldb/status.h \
+ /root/zuo/src/leveldb/include/leveldb/options.h \
+ /root/zuo/src/leveldb/include/leveldb/write_batch.h util.h uint256.h \
+ netbase.h compat.h /root/zuo/src/leveldb/include/leveldb/env.h \
+ /root/zuo/src/leveldb/include/leveldb/cache.h \
+ /root/zuo/src/leveldb/include/leveldb/filter_policy.h \
+ /root/zuo/src/leveldb/helpers/memenv/memenv.h
+leveldb.cpp leveldb.h serialize.h allocators.h version.h :
+ clientversion.h /root/zuo/src/leveldb/include/leveldb/db.h :
+ /root/zuo/src/leveldb/include/leveldb/iterator.h :
+ /root/zuo/src/leveldb/include/leveldb/slice.h :
+ /root/zuo/src/leveldb/include/leveldb/status.h :
+ /root/zuo/src/leveldb/include/leveldb/options.h :
+ /root/zuo/src/leveldb/include/leveldb/write_batch.h util.h uint256.h :
+ netbase.h compat.h /root/zuo/src/leveldb/include/leveldb/env.h :
+ /root/zuo/src/leveldb/include/leveldb/cache.h :
+ /root/zuo/src/leveldb/include/leveldb/filter_policy.h :
+ /root/zuo/src/leveldb/helpers/memenv/memenv.h :
